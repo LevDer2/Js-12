@@ -42,40 +42,78 @@
 //   Завдання 3
 // Напиши функцію findBestEmployee(employees), яка приймає об'єкт співробітників і повертає ім'я найпродуктивнішого (який виконав більше всіх задач). Співробітники і кількість виконаних завдань містяться як властивості об'єкта в форматі "ім'я":"кількість задач".
 
-const employeers = {
-    brobDev: {
-        name: "BoBA",
-        tasks: 5,
-    },
-    justDev: {
-        name: "Some",
-        tasks: 10,
-    },
-    lazyDev: {
-        name: "naourami",
-        tasks: 4,
-    },
-    freelancerForLife: {
-        name: "Lev",
-        tasks: 15,
-    },
-};
-const findBestEmployee = function(employees){
-    const keys = Object.keys(employees);
-    let maxTasks = 0;
-    let bestEmployee = "";
+// const employeers = {
+//     brobDev: {
+//         name: "BoBA",
+//         tasks: 5,
+//     },
+//     justDev: {
+//         name: "Some",
+//         tasks: 10,
+//     },
+//     lazyDev: {
+//         name: "naourami",
+//         tasks: 4,
+//     },
+//     freelancerForLife: {
+//         name: "Lev",
+//         tasks: 15,
+//     },
+// };
+// const findBestEmployee = function(employees){
+//     const keys = Object.keys(employees);
+//     let maxTasks = 0;
+//     let bestEmployee = "";
 
-    for (let key of keys){
-        const worker = employees[key];  
-        const tasks = worker.tasks;
+//     for (let key of keys){
+//         const worker = employees[key];  
+//         const tasks = worker.tasks;
         
-        if (tasks > maxTasks){
-            maxTasks = tasks;
-            bestEmployee = worker.name;
-        }
-    }
+//         if (tasks > maxTasks){
+//             maxTasks = tasks;
+//             bestEmployee = worker.name;
+//         }
+//     }
 
-    return  console.log(`Найкращий працівник ${bestEmployee}! Тому , що він виконав ${maxTasks} тасків`);
+//     return  console.log(`Найкращий працівник ${bestEmployee}! Тому , що він виконав ${maxTasks} тасків`);
     
-};
-console.log(findBestEmployee(employeers));
+// };
+// findBestEmployee(employeers);
+
+// Завдання 4
+// Напиши функцію countTotalSalary(employees) приймаючу об'єкт зарплат. Функція рахує загальну суму зарплати працівників і повертає її. Кожне поле об'єкта, переданого в функцію, має вигляд "ім'я":"зарплата".
+
+// const countTotalSalary = function(employees) {
+//     let totalSalary = 0;
+//     const values = Object.values(employees);
+    
+//     for (let i of values) {
+//       totalSalary += i;
+//       console.log(totalSalary);
+//     }
+    
+//     return totalSalary;
+//   }
+  
+//   console.log(
+//     countTotalSalary({
+//       mango: 100,
+//       poly: 150,
+//       alfred: 80,
+//     }),
+//   ); // 330
+
+//   Завдання 5
+// Напиши функцію getAllPropValues(arr, prop), яка отримує масив об'єктів і ім'я властивості. Повертає масив значень певної властивості prop з кожного об'єкта в масиві.
+
+  const products = [
+    { name: 'Радар', price: 1300, quantity: 4 },
+    { name: 'Сканер', price: 2700, quantity: 3 },
+    { name: 'Дроїд', price: 400, quantity: 7 },
+    { name: 'Захоплення', price: 1200, quantity: 2 },
+  ];
+  
+  
+  const getAllPropValues = function (arr, prop) {
+    
+  };
