@@ -106,7 +106,6 @@ const countTotalSalary = function(employees) {
   }
   
   console.log(countTotalSalary(fruit)); // 330
-  console.log(countTotalSalarys(mango, poly, alfred));
   
 
 // //   Завдання 5
